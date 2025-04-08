@@ -1,10 +1,8 @@
 import random
 
-
-
-
 print("Bem vindo caçador, este é o mágico mundo de ViLunaris")
 nome_player = input("Digite seu Nome:")
+
 hp = 100
 dano = 10
 level = 1
@@ -55,7 +53,7 @@ def criar_equipamento():
             player[dano] =+ valor_buff
 
 
-    if raridade == 'raro':
+    elif raridade == 'raro':
         valor_buff = random.randint(26,50)
 
         if buff== 'vida':
@@ -64,7 +62,7 @@ def criar_equipamento():
             player[dano] =+ valor_buff
 
 
-    if raridade == 'epico':
+    elif raridade == 'epico':
         valor_buff = random.randint(51,75)
 
         if buff== 'vida':
@@ -73,7 +71,7 @@ def criar_equipamento():
             player[dano] =+ valor_buff
 
 
-    if raridade == 'lendario':
+    elif raridade == 'lendario':
         valor_buff = random.randint(75,125)
 
         if buff== 'vida':
